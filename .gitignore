@@ -1,0 +1,22 @@
+# Beroenden
+node_modules/
+
+# Bygge
+dist/
+dist-ssr/
+
+# Miljövariabler och lokala filer
+.env
+.env.*
+*.local
+
+# Loggar
+npm-debug.log*
+
+# Editorer och system
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.swp
+*~
