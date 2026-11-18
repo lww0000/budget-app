@@ -537,7 +537,7 @@ export const FinanceProvider = ({ children }: { children?: ReactNode }) => {
              
              if (realTransactions.length > 0) {
                  const txToUpload = realTransactions.map(t => ({
-                     user_id: data.user.id,
+                     user_id: data.user!.id,
                      amount: t.amount,
                      category: t.category,
                      description: t.description,
