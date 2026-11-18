@@ -40,7 +40,7 @@ export const Button = ({ children, onClick, variant = 'primary', className = '',
       disabled={disabled || isLoading}
       onClick={onClick} 
       className={`${baseStyle} ${variants[variant]} ${className} ${disabled || isLoading ? 'cursor-not-allowed opacity-70' : ''}`}
-      {...props}
+      {...(props as HTMLMotionProps<'button'>)}
     >
       {isLoading ? (
         <>
